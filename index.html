@@ -233,10 +233,15 @@
         Aerospace Engineering Undergraduate @ Georgia Tech
       </p>
       <div class="flex flex-col sm:flex-row gap-4 justify-center">
-        <button class="btn-space px-8 py-4 rounded-full text-lg font-semibold" onclick="downloadResume()">
+        <a
+          href="Krish_Mishra-Resume.pdf"
+          download="Krish_Mishra-Resume.pdf"
+          class="btn-space px-8 py-4 rounded-full text-lg font-semibold">
           🚀 Download Resume
-        </button>
-        <button class="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300" onclick="scrollToSection('about')">
+        </a>      
+        <button
+          href="#about" 
+          class="border-2 border-blue-400 text-blue-400 px-8 py-4 rounded-full text-lg font-semibold hover:bg-blue-400 hover:text-white transition-all duration-300" onclick="scrollToSection('about')">
           🛸 Explore Mission
         </button>
       </div>
@@ -244,43 +249,64 @@
   </section>
 
   <!-- About Section -->
+
   <section id="about" class="py-20 relative z-10">
     <div class="max-w-6xl mx-auto px-6">
       <h2 class="orbitron text-4xl font-bold mb-8 section-header">Mission Brief</h2>
       <div class="grid md:grid-cols-2 gap-8 items-center">
+        
         <div class="card-hover p-8 rounded-2xl">
           <p class="text-lg leading-relaxed text-gray-300">
             I'm Krish Mishra, a passionate Aerospace Engineering undergraduate at Georgia Tech. With hands-on experience at GE Aerospace and research work in collaboration with NASA and GTRI, I aim to revolutionize space logistics and propulsion systems. Fluent in multiple languages and skilled in engineering tools, I enjoy leading high-impact projects like guided rocketry and habitat deployment for Mars missions.
           </p>
         </div>
+
+        <!-- NEW Skills card -->
         <div class="card-hover p-8 rounded-2xl">
-          <h3 class="orbitron text-2xl font-bold mb-6 text-blue-400">Skills</h3>
-          <div class="space-y-4">
+          <h3 class="orbitron text-2xl font-bold mb-6 text-blue-400">Technical Skills</h3>
+          <div class="space-y-6">
+            <!-- Software -->
             <div>
-              <div class="flex justify-between mb-2">
-                <span>Software</span>
-                <span>15%</span>
-              </div>
-              <div class="w-full bg-gray-700 rounded-full h-2">
-                <div class="progress-bar h-2 rounded-full" style="width: 95%"></div>
+              <div class="font-medium text-gray-300 mb-2">Software & CAD</div>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">SolidWorks</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Fusion 360</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Ansys</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">ArchiCAD</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">GrabCAD</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">OpenRocket</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">CAM</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">NX</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Tableau</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">DAQ</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">MS Office</span>
               </div>
             </div>
+
+            <!-- Tools -->
             <div>
-              <div class="flex justify-between mb-2">
-                <span>Hardware</span>
-                <span>88%</span>
-              </div>
-              <div class="w-full bg-gray-700 rounded-full h-2">
-                <div class="progress-bar h-2 rounded-full" style="width: 88%"></div>
+              <div class="font-medium text-gray-300 mb-2">Manufacturing Tools</div>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Lathe</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Mill</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Planer</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Hydraulic Press</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Band Saw</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">CNC</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Waterjet</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Laser Cutter</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Soldering Iron</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Power Tools</span>
               </div>
             </div>
+
+            <!-- Programming -->
             <div>
-              <div class="flex justify-between mb-2">
-                <span>Professional</span>
-                <span>92%</span>
-              </div>
-              <div class="w-full bg-gray-700 rounded-full h-2">
-                <div class="progress-bar h-2 rounded-full" style="width: 92%"></div>
+              <div class="font-medium text-gray-300 mb-2">Programming</div>
+              <div class="flex flex-wrap gap-3">
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Python</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">MATLAB</span>
+                <span class="px-3 py-1 bg-white bg-opacity-10 rounded-full text-sm hover:bg-opacity-20 transition">Simulink</span>
               </div>
             </div>
           </div>
@@ -288,6 +314,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- Experience Section -->
   <section id="experience" class="py-20 relative z-10">
